@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <meta charset="UTF-8">
   <head>
   </head>
   <body>
@@ -20,7 +21,73 @@
   <input type="text" name="research"> <br>
   Prefered emails for Github, DropBox, Zotero, and newletter(any or all): <br>
   <input type="text" name="emails"> <br>
-  <input type="submit" value="send">
+  <input type="submit" value="send" onclick="join()">
   </form>
   </body>
+
+<script>
+
+
+function join(){
+  let message =  "🍷😂😂⛽😋🐷😚😚🚂🚗🎮🈸®😋🎻📬🎌💠®🎌🚗👿😚😂😚💠🈸🎮🐽🍷😂😋🈸🆒🐝🌴📬🎻🎌📬🎻🎌🐝🎻🐝😋😚😋🍷📬🌴🆒🔱😳🎮🈸🍬🎮😂🆒😚➡😂👦🆒🐝🚊😂♠😂😄🆒👦💮🌜🌁🚅🙇🚅⛽🎮📆💸🎮😐🌁💠♌🍬🔕🚖➡🐽🐝©"
+let decryptionDict = {
+  "🍷": "h",
+  "😂": "t",
+  "⛽": "p",
+  "😋": "s",
+  "🐷": ":",
+  "😚": "/",
+  "🚂": "j",
+  "🚗": "o",
+  "🎮": "i",
+  "🈸": "n",
+  "®": ".",
+  "🎻": "l",
+  "📬": "a",
+  "🎌": "c",
+  "💠": "k",
+  "👿": "m",
+  "🐽": "g",
+  "🆒": "e",
+  "🐝": "u",
+  "🌴": "r",
+  "🔱": "d",
+  "😳": "_",
+  "🍬": "v",
+  "➡": "z",
+  "👦": "-",
+  "🚊": "b",
+  "♠": "x",
+  "😄": "2",
+  "💮": "W",
+  "🌜": "0",
+  "🌁": "w",
+  "🚅": "G",
+  "🙇": "8",
+  "📆": "R",
+  "💸": "P",
+  "😐": "Z",
+  "♌": "B",
+  "🔕": "O",
+  "🚖": "9",
+  "©": "A"
+}
+
+let result = ""
+for (character of message)
+{
+  
+  if (decryptionDict.hasOwnProperty(character))
+  {
+    result += decryptionDict[character]
+
+  }
+}
+
+  alert(result)
+}
+
+
+  </script>
+
 </html>
