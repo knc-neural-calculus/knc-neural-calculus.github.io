@@ -2,55 +2,111 @@
 <html>
   <meta charset="UTF-8">
 <head>
-	<title>KNC Neural Calculus : Members</title>
-	<style>
+	<title>Members -- KNC</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
 		ul#nav li {
 			padding: 30px 30px;
 			display:inline;
+		}
+		ul#members {
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;
+		}
+		ul#members li {
+			list-style-type: none;
+			padding: 7px;
+			margin: 2px;
+			border: 1px solid #000;
+			-webkit-column-break-inside: avoid;
+			page-break-inside: avoid;
+			break-inside: avoid;
 		}
 	</style>
 </head>
 <body style="padding-left: 20%;padding-right: 20%">
 	<center>
-		<h1>KNC Neural Calculus: ML & Computational Neuroscience research group</h1>
-		<p>
-		  Contact us: mltests 🇦​​​​​🇹​​​​​ outlook 🇩​​​​​🇴​​​​​🇹​​​​​ com
-    </p>
-  </center>
-  <center>
+		<h1>KNC Neural Calculus<br> Computational Neuroscience & ML research group</h1>
+		<p>Contact us: <u>contact ᴀᴛ knc.ai</u></p>
     <ul id="nav", style="list-style-type: none; margin: 0; padding: 0">
       <li><a href=".">about</a></li>
       <li><a href="https://github.com/knc-neural-calculus">github</a></li>
-      <li><a href="join.html"> join </a></li>
       <li><a href="projects.html">projects</a></li>
-      <li><a href="members.html">members</a></li>
+      <li id="thispage"><a href="members.html">members</a></li>
+      <li><a href="join.html"> join </a></li>
     </ul>
   </center>
 
-  <div>
-    <h2>Members:</h1>
-    <div>
-       <h3>John U. Balis <h3>
+  <div id="memlist"></div>
 
-          <h4>Interests:</h4>
+	<script>
+		var json = `[
+			{
+				"name": "John U. Balis",
+				"email": "balis@knc.ai",
+				"role": "Collaborator",
+				"interests": "Latent space traversal, eligibility propagation, generative adversarial networks, neuro-evolution of spiking neural networks"			
+			},
+			{
+				"name": "Michael I. Ivanitsky",
+				"email": "miv@knc.ai",
+				"role": "Collaborator",
+				"interests": "computational neuroscience, neural coding, biologically inspired learning algorithms, connectome generation, dendritic computation"
+			},
+			{
+				"name": "John Day",
+				"email": "johnmday@umich.edu",
+				"role": "Collaborator",
+				"interests": "Brain-inspired AI, Computational neuroscience, Computer vision",
+				"website": "https://johnmday.com",
+				"affil": "University of Michigan"
+			}
+		]`;
 
-           Latent space traversal, eligibility propagation, generative adversarial networks, neuro-evolution of spiking neural networks
+    var members = JSON.parse(json);
+    
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
 
-           <h4>Projects:</h4>
+    shuffleArray(members)
 
-           <li><a href="https://github.com/balisujohn/mltests">mltests:</a></li> neuro-evolution of spiking neural networks, using some OpenAI environments as well as custom environments.
-           A showcase is available <a href="https://www.youtube.com/watch?v=zFZZjQkz7RA">here</a>.
-           <br>
-            </br>
-            <li><a href="https://github.com/knc-neural-calculus/MNIST_autoencoder">MNIST latent space traversal:</a></li>  PyTorch MNIST digits classifier from sentdex's PyTorch tutorial repurposed to autoencode MNIST 
-           and visualize traversal of latent space. 
-           
-    <div>
+		let result = '';
 
+		result += '<ul id="members">'
+		for (var i = 0; i < members.length; i++) {
+			mem = members[i]
+			result += '<li>'
+			
+			result += '<b>' + mem['name'] + '</b><br>'
+			
+			result += mem['role'] + '<br>'
 
-  </div>
-  
+			if ('email' in mem) {
+				result += '<u>contact:</u> ' + mem['email'].replace('@', ' ᴀᴛ ').replace('.', ' ᴅᴏᴛ ​​​​​') + '<br>'
+			}
+			
+			if ('website' in mem) {
+				result += '<u>Website:</u> ' + mem['website'] + '<br>'
+			}
 
+			if ('affil' in mem) {
+				result += '<u>Affiliation:</u> ' + mem['affil'] + '<br>'
+			}
+			
+			if ('interests' in mem) {
+				result += '<u>Interests:</u> ' + mem['interests'] + '<br>'
+			}
 
+			result += '</li><br><br>'
+		}
+		result += '</ul>'
+
+		document.getElementById("memlist").innerHTML = result
+	</script>
 </body>
 </html>
