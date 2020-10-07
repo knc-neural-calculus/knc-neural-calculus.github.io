@@ -3,14 +3,25 @@
   <meta charset="UTF-8">
 <head>
 	<title>Projects -- KNC</title>
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #projects li {
+      padding: 1em;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
 </head>
 <body style="padding-left: 20%;padding-right: 20%">
 	<center>
 		<h1>KNC Neural Calculus<br> Computational Neuroscience & ML research group</h1>
 		<p>Contact us: <u>contact ᴀᴛ knc.ai</u></p>
     <ul id="nav", style="list-style-type: none; margin: 0; padding: 0">
-      <li"><a href=".">about</a></li>
+      <li><a href=".">about</a></li>
       <li><a href="https://github.com/knc-neural-calculus">github</a></li>
       <li id="thispage"><a href="projects.html">projects</a></li>
       <li><a href="members.html">members</a></li>
@@ -18,14 +29,29 @@
     </ul>
   </center>
 
-	<br><br><br>
-
+  <br>
+  
   <center>
-
-  <li><a href="https://github.com/knc-neural-calculus/MNIST_autoencoder">MNIST latent space traversal:</a></li>  PyTorch MNIST digits classifier from sentdex's PyTorch tutorial repurposed to autoencode MNIST 
-  and visualize traversal of latent space. 
   check out our <a href="https://github.com/knc-neural-calculus">github</a> to see all public projects.
   </center>
+
+  <ul id="projects">
+    <li>
+      <a href="https://github.com/balisujohn/mltests">mltests:</a><br>
+      neuro-evolution of spiking neural networks, using some OpenAI environments as well as custom environments. A showcase is available <a href="https://www.youtube.com/watch?v=zFZZjQkz7RA">here</a>.
+    </li>
+    <li>
+      <a href="https://github.com/knc-neural-calculus/axon-growth-sim">Axon Growth Simulation:</a><br>
+      Generating neural connectomes by simulating diffusion of numerous neurite growth factors across a network, with neuron activity varying depending on the incoming connections. <br>
+      <img src="img/axon-growth.png" alt="axons grown across a chemical gradient" class="center" >
+    </li>
+
+    
+    <li>
+      <a href="https://github.com/knc-neural-calculus/MNIST_autoencoder">MNIST latent space traversal:</a><br>
+      PyTorch MNIST digits classifier from sentdex's PyTorch tutorial repurposed to autoencode MNIST and visualize traversal of latent space.
+    </li>
+  </ul>
 
 
 </body>
