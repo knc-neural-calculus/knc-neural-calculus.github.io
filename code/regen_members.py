@@ -12,3 +12,6 @@ def main():
 	elif do_continue == 'y':
 		with open("../members.html", 'w') as f:
 			print(mempage, file=f)
+
+if __name__ == "__main__":
+	main()

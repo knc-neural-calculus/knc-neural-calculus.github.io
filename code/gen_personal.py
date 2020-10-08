@@ -21,3 +21,6 @@ def main():
 	elif do_continue == 'y':
 		with open("../%s/index.html" % knc_id, 'w') as f:
 			print(user_page, file=f)
+
+if __name__ == "__main__":
+	main()

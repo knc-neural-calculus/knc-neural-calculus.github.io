@@ -1,7 +1,7 @@
 import os
 import json
 
-from yattag import Doc
+from yattag import Doc,indent
 
 
 
@@ -50,37 +50,32 @@ def gen_member_card(data):
 
 	with tag('li'):
 		with tag('center'):
-			with tag('b'):
-				text(data['name'] + ' - ' + data['knc_id'])
-			text('<br>')
-			text(data['role'])
-			text('<br>')
-			with tag('a', href=data['email']):
-				text(data['email'])
-			text('<br>')
-	
-		
-		with tag('h1'):
-			text(data['name'])
-		with tag('h2'):
-			with tag('a', href=data['email']):
-				text(data['email'])
-		with tag('h2'):
-			text(data['role'])
-	
-	links_list = ['github','website','CV']
+			with tag('b', id="memid"):
+				text(data['name'])
+			doc._append("<br/>")
 
-	if any( (x in data) for x in links_list):
-		with tag('h2'):
-			text('Links:')
-		with tag('ul'):
-			for x in links_list:
-				if x in data:
-					with tag('li'):
+			with tag('a', id="memid", href=data['knc_id']):
+				text(data['knc_id'])
+			doc._append("<br/>")
+
+			text(data['role'])
+			doc._append("<br/>")
+
+			with tag('a', href=data['email']):
+				text(data['email'])
+			doc._append("<br/>")
+		
+		links_list = ['github','website','CV']
+
+		if any( (x in data) for x in links_list):
+			with tag('center'):
+				for x in links_list:
+					if x in data:
 						with tag('a', href=data[x]):
 							text(x)
+						doc._append("<br/>")
 
-	return doc.getvalue()
+	return indent(doc.getvalue(), indent_text = False)
 
 
 
@@ -100,7 +95,7 @@ def gen_members_page(user_data):
 
 	return (
 		MEMBERS_HEADER
-		+ '\n'.join(memlist)
+		+ indent('\n'.join(memlist), indent_text = False)
 		+ MEMBERS_FOOTER
 	)
 
@@ -119,7 +114,7 @@ def gen_members_page(user_data):
 
 def gen_personal_html(data):
 
-	PERSONAL_TEMPLATE = f'''
+	PERSONAL_TEMPLATE = '''
 	<!DOCTYPE html>
 	<html>
 	<meta charset="UTF-8">
@@ -161,6 +156,12 @@ def gen_personal_html(data):
 					with tag('li'):
 						with tag('a', href=data[x]):
 							text(x)
+
+	if 'interests' in data:
+		with tag('h2'):
+			text('Interests:')
+		with tag('p'):
+			text(data['interests'])
 
 	if 'proj_blurb' in data:
 		with tag('h2'):
