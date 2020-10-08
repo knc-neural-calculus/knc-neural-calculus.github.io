@@ -86,7 +86,16 @@ def gen_members_page(user_data):
 	MEMBERS_HEADER = None
 	with open('members_header.txt') as f:
 		MEMBERS_HEADER = f.read()
-	MEMBERS_FOOTER = "</ul></div> </body> </html>"
+	MEMBERS_FOOTER = '''
+	</ul></div> </body> </html>
+
+	<script>
+		var ul = document.querySelector('ul#members');
+		for (var i = ul.children.length; i >= 0; i--) {
+			ul.appendChild(ul.children[Math.random() * i | 0]);
+		}
+	</script>
+	'''
 
 	memlist = []
 

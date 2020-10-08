@@ -80,4 +80,13 @@
 </li>
 <li>
   <center><b id="memid">Michael I. Ivanitsky</b><br/><a id="memid" href="@miv">@miv</a><br/>Collaborator<br/><a href="miv@knc.ai">miv@knc.ai</a><br/></center>
-</li></ul></div> </body> </html>
+</li>
+	</ul></div> </body> </html>
+
+	<script>
+		var ul = document.querySelector('ul#members');
+		for (var i = ul.children.length; i >= 0; i--) {
+			ul.appendChild(ul.children[Math.random() * i | 0]);
+		}
+	</script>
+	
