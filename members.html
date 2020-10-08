@@ -16,27 +16,31 @@
 		}
 		ul#members li {
 			list-style-type: none;
-			padding: 7px;
-			margin: 2px;
-			border: 1px solid #000;
+			padding: 1em;
+			margin: .5em;
+			border: 2px solid #000;
 			-webkit-column-break-inside: avoid;
 			page-break-inside: avoid;
 			break-inside: avoid;
 		}
+		div#memlist {
+			padding-left: 8%;
+			padding-right: 10%;
+		}
 	</style>
 </head>
-<body style="padding-left: 20%;padding-right: 20%">
-	<center>
+<body>
+	<center style="padding-left: 20%;padding-right: 20%">
 		<h1>KNC Neural Calculus<br> Computational Neuroscience & ML research group</h1>
-		<p>Contact us: <u>contact ᴀᴛ knc.ai</u></p>
-    <ul id="nav", style="list-style-type: none; margin: 0; padding: 0">
-      <li><a href=".">about</a></li>
-      <li><a href="https://github.com/knc-neural-calculus">github</a></li>
-      <li><a href="projects.html">projects</a></li>
-      <li id="thispage"><a href="members.html">members</a></li>
-      <li><a href="join.html"> join </a></li>
-    </ul>
-  </center>
+		<p>Contact us: <a href="mailto:contact@knc.ai">contact@knc.ai</a></p>
+		<ul id="nav", style="list-style-type: none; margin: 0; padding: 0">
+		<li><a href=".">about</a></li>
+		<li><a href="https://github.com/knc-neural-calculus">github</a></li>
+		<li><a href="projects.html">projects</a></li>
+		<li id="thispage"><a href="members.html">members</a></li>
+		<li><a href="join.html"> join </a></li>
+		</ul>
+  	</center>
 
   <div id="memlist"></div>
 
@@ -82,13 +86,16 @@
 			mem = members[i]
 			result += '<li>'
 			
-			result += '<b>' + mem['name'] + '</b><br>'
+			result += '<center><b>' + mem['name'] + '</b><br>'
 			
 			result += mem['role'] + '<br>'
 
 			if ('email' in mem) {
-				result += '<u>contact:</u> ' + mem['email'].replace('@', ' ᴀᴛ ').replace('.', ' ᴅᴏᴛ ​​​​​') + '<br>'
+				// result += mem['email'].replace('@', ' ᴀᴛ ').replace('.', ' ᴅᴏᴛ ​​​​​') + '<br>'
+				result += mem['email'] + '<br>'
 			}
+
+			result += '</center>'
 			
 			if ('website' in mem) {
 				result += '<u>Website:</u> ' + mem['website'] + '<br>'

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+<head>
+	<title>Members -- KNC</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+		ul#nav li {
+			padding: 30px 30px;
+			display:inline;
+		}
+		ul#members {
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;
+		}
+		ul#members li {
+			list-style-type: none;
+			padding: 1em;
+			margin: .5em;
+			border: 2px solid #000;
+			-webkit-column-break-inside: avoid;
+			page-break-inside: avoid;
+			break-inside: avoid;
+		}
+		div#memlist {
+			padding-left: 8%;
+			padding-right: 10%;
+		}
+	</style>
+</head>
+<body>
+	<center style="padding-left: 20%;padding-right: 20%">
+		<h1>KNC Neural Calculus<br> Computational Neuroscience & ML research group</h1>
+		<p>Contact us: <a href="mailto:contact@knc.ai">contact@knc.ai</a></p>
+		<ul id="nav", style="list-style-type: none; margin: 0; padding: 0">
+		<li><a href=".">about</a></li>
+		<li><a href="https://github.com/knc-neural-calculus">github</a></li>
+		<li><a href="projects.html">projects</a></li>
+		<li id="thispage"><a href="members.html">members</a></li>
+		<li><a href="join.html"> join </a></li>
+		</ul>
+  	</center>
+
+	<div id="memlist">
+		<ul id="members">

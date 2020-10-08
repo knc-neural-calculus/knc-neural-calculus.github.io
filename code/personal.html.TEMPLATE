@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+<head>
+	<title>KNC -- {knc_id}</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body style="padding-left: 20%;padding-right: 20%">
+  <a href="../index.html">KNC Home</a>
+  <center>
+		<h1>{name}<br></h1>
+    <h2><a href="mailto:{email}">{email}</a></h2>
+    <h2>{role}</h2>
+  </center>
+
+  <p>
+	{bio}
+  </p>
+
+  <h2>Links:</h2>
+  <ul>
+    <li>email: <a href="{email}">{email}</a></li>
+    <li><a href="{github}">github</a></li>
+    <li><a href="{website}">personal website</a></li>
+  </ul>
+
+  <h2>Projects</h2>
+  <p>
+	{proj_blurb}
+  </p>
+
+</body>
+</html>
