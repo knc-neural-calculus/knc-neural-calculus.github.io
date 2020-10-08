@@ -28,6 +28,8 @@ def load_user_info():
 	for usr in dirs:
 		with open("../" + usr + "/info.json", 'r') as f:
 			user_data[usr] = json.load(f)
+			if user_data[usr]['knc_id'] != usr:
+				raise ValueError('knc id in json does not match dirname!')
 
 	return user_data
 
