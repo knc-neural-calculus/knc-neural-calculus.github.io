@@ -52,6 +52,10 @@ def gen_member_card(data):
 		with tag('center'):
 			with tag('b', id="memid"):
 				text(data['name'])
+			# if 'pronouns' in data:
+			# 	text('  (%s)' % data['pronouns'])
+			# else:
+			# 	text('  (they/them)')
 			doc._append("<br/>")
 
 			with tag('a', id="memid", href=data['knc_id']):
@@ -74,6 +78,14 @@ def gen_member_card(data):
 						with tag('a', href=data[x]):
 							text(x)
 						doc._append("<br/>")
+
+		if 'interests' in data:
+			with tag('center'):
+				with tag('p'):
+					with tag('u'):
+						text('Interests:')
+					text('   ')
+					text(data['interests'])
 
 	return indent(doc.getvalue(), indent_text = False)
 
