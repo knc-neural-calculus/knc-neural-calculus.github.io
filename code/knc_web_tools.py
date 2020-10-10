@@ -104,7 +104,7 @@ def gen_members_page(user_data):
 	</ul></div> </body> </html>
 
 	<script>
-		var ul = document.querySelector('ul#members');
+		var ul = document.querySelector('ul#memlist');
 		for (var i = ul.children.length; i >= 0; i--) {
 			ul.appendChild(ul.children[Math.random() * i | 0]);
 		}
