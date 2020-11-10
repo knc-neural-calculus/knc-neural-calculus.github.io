@@ -7,7 +7,7 @@ def main():
 
 	if knc_id not in user_info:
 		print('user not found! avalible users:')
-		for x in knc_id:
+		for x in user_info:
 			print('\t' + x)
 		raise KeyError('user not found')
 		exit(1)
@@ -17,10 +17,12 @@ def main():
 	do_continue = input('WARNING: this will overwrite the old `../%s/index.html`, continue? (y/n)\n' % knc_id)
 
 	if do_continue == 'n':
+		print('exiting -- no files modified')
 		exit()
 	elif do_continue == 'y':
 		with open("../%s/index.html" % knc_id, 'w') as f:
 			print(user_page, file=f)
+		print('updated successfully')
 
 if __name__ == "__main__":
 	main()

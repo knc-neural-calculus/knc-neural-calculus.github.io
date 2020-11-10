@@ -1,0 +1,15 @@
+{
+	"projname": "mltests",
+	"proj_id": "mltests",
+	"links": {
+		"Github" : "https://github.com/knc-neural-calculus/mltests",
+		"showcase" : "https://www.youtube.com/watch?v=zFZZjQkz7RA"
+	},
+	"contributors": [
+		"@balis",
+		"@miv",
+		"William Derksen"
+	],
+	"short_desc": "neuro-evolution of spiking neural networks, using some OpenAI environments as well as custom environments",
+	"long_desc": "This is a project with the loose goal of finding interesting ways to generate intelligent agents through trial and error. There are currently distinct Python and C++ architectures, each with a default basic spiking neural network and a experimental frequency-domain based spiking neural network. The documentation on github provides more information."
+}

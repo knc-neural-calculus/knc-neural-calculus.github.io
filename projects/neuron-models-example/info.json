@@ -1,0 +1,12 @@
+{
+	"projname": "Neuron models library",
+	"proj_id": "neuron-models-example",
+	"links": {
+		"Github" : "https://github.com/knc-neural-calculus/neuron-models-example"
+	},
+	"contributors": [
+		"@miv"
+	],
+	"short_desc": "Implements several different biological neuron models and accompanying tools in python under a common framework",
+	"long_desc": "This project implements a variety of neuron models under a common framework in python. Sympy is used for the model definitions, which makes it very easy to export the models to a LaTeX doc. Tools included allow for spiketrain extraction, generation of frequency-current curves, phase plots (where applicable), bifurcation plots, and other things. "
+}

@@ -1,0 +1,22 @@
+{
+	"projname": "test project",
+	"proj_id": "test_proj",
+	"links": {
+		"github" : "github.com/test/proj",
+		"website" : "knc.ai",
+	},
+	"contributors": [
+		"@user1",
+		"@user2",
+		"users name without link",
+	],
+	"short_desc": "this text appears on the main projects page",
+	"long_desc": "this text should be longer and appears on the index.html for the project",
+	"images": [
+		"path/to/image.jpg",
+		"pathto/other/image.png",
+		"these/images/will/display/on/the/individual/project/page.png"
+	],
+	"thumbnail": "this/single/image/will/display/on/the/list/of/projects.png",
+	"affil": "KNC"
+}
