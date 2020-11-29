@@ -159,7 +159,8 @@ def gen_personal_html(data):
 	<meta charset="UTF-8">
 	<head>
 		<title>KNC -- {knc_id}</title>
-	<link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../style.css">
+		{header_stuff}
 	</head>
 	<body style="padding-left: 20%;padding-right: 20%">
 	<a href="../index.html">KNC Home</a>
@@ -170,6 +171,32 @@ def gen_personal_html(data):
 	'''
 
 	doc,tag,text = Doc().tagtext()
+
+	# if they want a webpage redirect
+	if (
+			'redirect_page_to_website' in data
+			and 'website' in data
+			and data['redirect_page_to_website']
+		):
+
+		# do the redirect
+		redirect_header = (
+			'<meta http-equiv="refresh" content="0; URL=%s" />' 
+			% data['website']
+		)
+
+		# print a link also
+		with tag('p'):
+			text('redirecting to:')
+			doc._append("<br/>")
+			with tag('a', href=data['website']):
+				text(data['website'])
+
+		return PERSONAL_TEMPLATE.format(
+			knc_id = data['knc_id'],
+			everything_else = doc.getvalue(),
+			header_stuff = redirect_header,
+		)
 
 	with tag('center'):
 		with tag('h1'):
@@ -212,11 +239,9 @@ def gen_personal_html(data):
 	return PERSONAL_TEMPLATE.format(
 		knc_id = data['knc_id'],
 		everything_else = doc.getvalue(),
+		header_stuff = '',
 	)
 
-
-if __name__ == "__main__":
-	print('dont run me')
 
 
 
