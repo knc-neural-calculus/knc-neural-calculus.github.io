@@ -68,19 +68,18 @@ def gen_member_card(data):
 
 	with tag('li'):
 		with tag('center'):
-			with tag('b', id="memid"):
-				text(data['name'])
-			# if 'pronouns' in data:
-			# 	text('  (%s)' % data['pronouns'])
-			# else:
-			# 	text('  (they/them)')
+			with tag('a', id="memid", href=data['knc_id']):
+				with tag('b', id="memid"):
+					text(data['name'])
 			doc._append("<br/>")
 
-			with tag('a', id="memid", href=data['knc_id']):
-				text(data['knc_id'])
-			doc._append("<br/>")
+			# with tag('a', id="memid", href=data['knc_id']):
+			# 	text(data['knc_id'])
+			# doc._append("<br/>")
 
 			text(data['role'])
+			if 'pronouns' in data:
+				text('  (%s)' % data['pronouns'])
 			doc._append("<br/>")
 
 			with tag('a', href='mailto:'+data['email']):
@@ -90,12 +89,17 @@ def gen_member_card(data):
 		links_list = ['github','website','CV']
 
 		if any( (x in data) for x in links_list):
+			links_text_list = []
+			for x in links_list:
+				if x in data:
+					links_text_list.append(
+						'<a href="%s">%s<a>'
+						% ( data[x], x )
+					)
+
 			with tag('center'):
-				for x in links_list:
-					if x in data:
-						with tag('a', href=data[x]):
-							text(x)
-						doc._append("<br/>")
+				doc._append(" | ".join(links_text_list))
+				doc._append("<br/>")
 
 		if 'interests' in data:
 			with tag('center'):
