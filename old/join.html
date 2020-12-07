@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+<head>
+	<title>Join -- KNC</title>
+	<link rel="stylesheet" href="style.css">
+   <link rel="stylesheet"
+           href="https://fonts.googleapis.com/css?family=Roboto%20Slab">
+</head>
+<body style="padding-left: 25%;padding-right: 25%">
+	<div id="top_div">
+		<a class="no_underline" href=".">
+        <h1 id="top_header">KNC Neural Calculus</h1>
+        <h1 id="lower_header">Computational Neuroscience & ML research group</h1>
+		</a>
+	</div>
+	<ul id="nav", style="list-style-type: none; margin: 0; padding: 0">
+	  <a class="no_underline" href="."><li>about</li></a>
+	  <a class="no_underline" href="https://github.com/knc-neural-calculus"><li>github</li></a>
+	  <a class="no_underline" href="projects.html"><li>projects</li></a>
+	  <a class="no_underline" href="members.html"><li>members</li></a>
+	  <a class="no_underline" href="join.html"><li id="thispage"> join </li></a>
+	</ul>
+  
+  <br> 
+  <center>
+  We use slack for most of our projects, readings, discussions, and organizational things. It's free to join for anyone interested, but we'd like to know a bit about you first. Feel free to leave anything blank if you'd rather not answer. 
+  <br> 
+  </center>
+  
+  <form action="mailto:mltests@outlook.com?subject=KNC application" method="post" enctype="text/plain"><br>
+  <ul>
+    <li>  
+      Preferred name or username <br>
+      <input type="text" name="name"> <br><br>
+    </li>
+    <li>
+      Preferred pronouns, if any <br>
+      <input type="text" name="pronouns"> <br><br>
+    </li>
+    <li>
+      Affiliation (school, company, etc) if any <br>
+      <input type="text" name="group"> <br><br>
+    </li>
+    <li>
+      Research Area (feel free to rant here if you want) <br>
+      <textarea rows="5" cols="50" name="research"></textarea> <br><br>
+    </li>
+    <li>
+      Preferred contact email (we send out a monthly newsletter, just shoot us an email if you'd like to opt out)<br>
+      <input type="text" name="email:contact"> <br><br>
+    </li>
+    <li>
+      We use <a href="https://github.com/knc-neural-calculus">github</a>, Dropbox, and <a href="https://www.zotero.org/groups/2474614/knc-neural-calculus">Zotero</a> for projects, papers, notes, and all sorts of stuff. If you'd like to be added to our groups on these platforms, put your preferred email for each of those services. If you leave it blank, we will use the same email as your contact email<br>
+      <ul>
+        <li>
+          github: <input type="text" name="email:github"> <br><br>
+        </li>
+        <li>
+          dropbox: <input type="text" name="email:dropbox"> <br><br>
+        </li>
+        <li>
+          zotero: <input type="text" name="email:zotero"> <br><br>
+        </li>
+      </ul>
+    </li>
+    <input type="submit" value="send" onclick="join()">
+    <input type="reset" name="reset" value="Clear Form" />
+  </ul>
+  </form>
+  </body>
+
+  <center>
+    <p id="slack_link"></p>
+  </center>
+
+  <br><br>
+<center>
+  If for some reason this form doesn't work for you, just email us (see above) and tell us about yourself. We try to check it regularly, but if you don't get a response then just email us again.
+  <br> 
+</center>
+  
+
+
+
+<script>
+
+
+function join()
+{
+  let message =  "🍷😂😂⛽😋🐷😚😚🚂🚗🎮🈸®😋🎻📬🎌💠®🎌🚗👿😚😂😚💠🈸🎮🐽🍷😂😋🈸🆒🐝🌴📬🎻🎌📬🎻🎌🐝🎻🐝😋😚😋🍷📬🌴🆒🔱😳🎮🈸🍬🎮😂🆒😚➡😂👦🆒🐝🚊😂♠😂😄🆒👦💮🌜🌁🚅🙇🚅⛽🎮📆💸🎮😐🌁💠♌🍬🔕🚖➡🐽🐝©"
+
+  let decryptionDict = {
+    "🍷": "h",
+    "😂": "t",
+    "⛽": "p",
+    "😋": "s",
+    "🐷": ":",
+    "😚": "/",
+    "🚂": "j",
+    "🚗": "o",
+    "🎮": "i",
+    "🈸": "n",
+    "®": ".",
+    "🎻": "l",
+    "📬": "a",
+    "🎌": "c",
+    "💠": "k",
+    "👿": "m",
+    "🐽": "g",
+    "🆒": "e",
+    "🐝": "u",
+    "🌴": "r",
+    "🔱": "d",
+    "😳": "_",
+    "🍬": "v",
+    "➡": "z",
+    "👦": "-",
+    "🚊": "b",
+    "♠": "x",
+    "😄": "2",
+    "💮": "W",
+    "🌜": "0",
+    "🌁": "w",
+    "🚅": "G",
+    "🙇": "8",
+    "📆": "R",
+    "💸": "P",
+    "😐": "Z",
+    "♌": "B",
+    "🔕": "O",
+    "🚖": "9",
+    "©": "A"
+  }
+
+  let result = '<a style="font-size:5vw" href="'
+
+  for (character of message)
+  {
+    
+    if (decryptionDict.hasOwnProperty(character))
+    {
+      result += decryptionDict[character]
+
+    }
+  }
+
+  result += '">secret join link</a>'
+
+  document.getElementById("slack_link").innerHTML = result
+}
+
+
+  </script>
+
+</html>
