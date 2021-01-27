@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example Author on KNC Neural Calculus</title>
+    <link>/authors/example-author/</link>
+    <description>Recent content in Example Author on KNC Neural Calculus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2021 KNC Neural Calculus</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/authors/example-author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project Title</title>
+      <link>/projects/test/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/test/</guid>
+      <description>Test test</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,7 +8,7 @@
     {{ end }}
 </article>
 <div class="bg-secondary-bg rounded px-6">
-    {{ partial "components/summary-list-plain" .Paginator.Pages }}
+    {{ partial "components/summary-list-card" .Paginator.Pages }}
 </div>
 {{ template "_internal/pagination.html" . }}
 {{ end }}

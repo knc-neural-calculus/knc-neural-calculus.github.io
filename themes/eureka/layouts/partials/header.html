@@ -28,24 +28,23 @@
 
         <div class="flex">
             <div class="relative pt-4 md:pt-0">
-                
                 <div class="cursor-pointer hover:text-eureka"></div>
-                {{- $relPermalink := .RelPermalink }}
-                {{- range .Site.Menus.main }}
-                {{- $url := .URL | relLangURL }}
-                <a href="{{ $url }}" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 {{ if hasPrefix $relPermalink $url }} selected-menu-item {{ else }} border-transparent {{ end }} mr-4">{{ .Name }}</a>
-                {{- end }}
-            
-                
-                    <span id="lightDarkMode">
-                    {{- if eq .Site.Params.colorScheme "dark" }}
-                    <i class="fas fa-moon"></i>
-                    {{- else if eq .Site.Params.colorScheme "light" }}
-                    <i class="fas fa-sun"></i>
-                    {{- else }}
-                    <i class="fas fa-adjust"></i>
+                    {{- $relPermalink := .RelPermalink }}
+                    {{- range .Site.Menus.main }}
+                    {{- $url := .URL | relLangURL }}
+                    <a href="{{ $url }}" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 {{ if hasPrefix $relPermalink $url }} selected-menu-item {{ else }} border-transparent {{ end }} mr-4">{{ .Name }}</a>
                     {{- end }}
-                </span>
+                
+                    
+                    <span id="lightDarkMode">
+                        {{- if eq .Site.Params.colorScheme "dark" }}
+                        <i class="fas fa-moon"></i>
+                        {{- else if eq .Site.Params.colorScheme "light" }}
+                        <i class="fas fa-sun"></i>
+                        {{- else }}
+                        <i class="fas fa-adjust"></i>
+                        {{- end }}
+                    </span>
                 </div>
                 <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
                 </div>

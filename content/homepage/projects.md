@@ -1,10 +1,17 @@
 +++
-title = "Blank"
-weight = 4
+title = "Projects"
+weight = 2
 draft = false
 
+# Section you want to display
+section = "projects"
+# Pages count
+count = 5
+# Options: card, plain and masonry.
+style = "plain"
+
 [widget]
-  handler = "blank"
+  handler = "pages"
     
   # Options: sm, md, lg and xl. Default is md.
   width = ""
@@ -20,15 +27,11 @@ draft = false
     color = ""
     
     # See TODO
-    image = "images/hero-left.jpg"
+    image = ""
     # Options: auto, cover and contain. Default is auto.
-    size = "cover"
+    size = ""
     # Options: center, top, right, bottom, left.
     position = ""
     # Options: fixed, local, scroll.
     attachment = ""
 +++
-
-<div style="text-align:center">
-  <p>Write anything you like here!</p>
-</div>

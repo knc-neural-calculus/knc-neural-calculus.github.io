@@ -12,7 +12,10 @@ lastmod = "2019-03-11"
 draft = false
 +++
 
+<--PUT DESCRIPTION TEXT HERE above the more-->
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+
+
 <!--more-->
 
 You can type inline equation like $E=mc^2$.
