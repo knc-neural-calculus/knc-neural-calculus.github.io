@@ -23,16 +23,21 @@
     <div id="target"
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
-            {{- $relPermalink := .RelPermalink }}
-            {{- range .Site.Menus.main }}
-            {{- $url := .URL | relLangURL }}
-            <a href="{{ $url }}" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 {{ if hasPrefix $relPermalink $url }} selected-menu-item {{ else }} border-transparent {{ end }} mr-4">{{ .Name }}</a>
-            {{- end }}
+
         </div>
 
         <div class="flex">
             <div class="relative pt-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                
+                <div class="cursor-pointer hover:text-eureka"></div>
+                {{- $relPermalink := .RelPermalink }}
+                {{- range .Site.Menus.main }}
+                {{- $url := .URL | relLangURL }}
+                <a href="{{ $url }}" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 {{ if hasPrefix $relPermalink $url }} selected-menu-item {{ else }} border-transparent {{ end }} mr-4">{{ .Name }}</a>
+                {{- end }}
+            
+                
+                    <span id="lightDarkMode">
                     {{- if eq .Site.Params.colorScheme "dark" }}
                     <i class="fas fa-moon"></i>
                     {{- else if eq .Site.Params.colorScheme "light" }}
@@ -40,6 +45,7 @@
                     {{- else }}
                     <i class="fas fa-adjust"></i>
                     {{- end }}
+                </span>
                 </div>
                 <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
                 </div>
