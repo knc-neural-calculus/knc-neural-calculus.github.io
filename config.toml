@@ -1,13 +1,10 @@
 baseURL = "/"
-title = "Eureka Demo"
+title = "KNC Neural Calculus"
 
-# Comment when installing using Hugo Modules
 theme = "eureka"
-# Uncomment when installing using Hugo Modules
-# theme = "github.com/wangchucheng/hugo-eureka"
 
 paginate = 3
-copyright = "&copy; 2021 <a href=\"https://www.wangchucheng.com/\">C. Wang</a> and <a href=\"https://www.ruiqima.com/\">R. Ma</a>"
+copyright = "&copy; 2021 KNC Neural Calculus"
 enableEmoji = true
 enableGitInfo = false
 summaryLength = 75
