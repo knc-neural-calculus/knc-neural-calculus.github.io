@@ -10,7 +10,7 @@ dateFormat = ""
 titleSeparator = ""
 
 # Options: auto, light and dark. Default is auto.
-colorScheme = ""
+colorScheme = "light"
 
 # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
 siteType = "Research Organization"

@@ -2,7 +2,8 @@
 # METADATA
 
 title = "Project Title"
-date =  "2021-01-01"
+date =  "2021-01-01" 
+# Projects are sorted by date
 
 # This text is displayed as the project's summary on the list of projects
 summary = "Test test"
