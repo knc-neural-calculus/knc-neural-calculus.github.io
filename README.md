@@ -2,6 +2,8 @@ Install hugo: https://gohugo.io/getting-started/installing
 
 Dev tutorial: https://gohugo.io/getting-started/quick-start/
 
+Theme tutorial: https://www.wangchucheng.com/en/docs/eureka/getting-started/
+
 Writing tutorial: https://learn.netlify.app/en/cont/markdown/
 
 New member page: hugo new members/my-name.md

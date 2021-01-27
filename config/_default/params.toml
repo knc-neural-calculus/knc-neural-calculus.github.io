@@ -1,5 +1,5 @@
-mainSections = ["posts"]
-description = "Eureka is a elegant and powerful theme for Hugo."
+mainSections = ["members", "projects"]
+description = "KNC is a ."
 
 repoURL = ""
 # If it is a Github repo, leave blank
@@ -13,9 +13,9 @@ titleSeparator = ""
 colorScheme = ""
 
 # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
-siteType = "Person"
+siteType = "Research Organization"
 icon = "images/icon.png"
-publisherName = "C. Wang"
+publisherName = "KNC Neural Calculus"
 publisherLogo = ""
 
 [math]
