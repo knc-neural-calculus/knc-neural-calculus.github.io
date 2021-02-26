@@ -3,7 +3,7 @@ title = "KNC Neural Calculus"
 
 theme = "eureka"
 
-paginate = 3
+paginate = 100
 copyright = "&copy; 2021 KNC Neural Calculus"
 enableEmoji = true
 enableGitInfo = false

@@ -5,7 +5,7 @@ draft = false
 
 role = "Example Role"
 bio = "Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur."
-avatar = "images/icon.png"
+avatar = "images/default_avatar.png"
 
 [organization]
   name = "Example Organization"

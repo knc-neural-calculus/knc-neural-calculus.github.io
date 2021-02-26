@@ -1,30 +1,36 @@
 +++
-# Name
-title = "Example Author"
-role = "Example Role"
-bio = "Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur."
-avatar = "images/icon.png"
+# This appears as bio text on the list of members
+title = "Example Member 4"
+role = "Collaborator"
+bio = "Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur. Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur. Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur."
+# This is used on your member page. Leave this default one or add your own
+avatar = "images/default_avatar.png"
 
+# Change this to another organization if you have one
 [organization]
-  name = "Example Organization"
-  url = "https://example.com/"
-
+  name = "KNC Neural Calculus"
+  url = "https://knc.ai/"
+# Email and social links
 [[social]]
   icon = "envelope"
   iconPack = "fas"
-  url = "mailto:example@example.com"
-
-[[social]]
-  icon = "twitter"
-  iconPack = "fab"
-  url = "https://example.com/"
-
+  url = "mailto:example@knc.com"
+  
 [[social]]
   icon = "github"
   iconPack = "fab"
-  url = "https://example.com/"
+  url = "https://github.com/"
 
+# You can add additional links like this. Check the available icons on https://fontawesome.com/.
+[[social]]
+  icon = ""
+  iconPack = ""
+  url = ""
+
+
+# Put some long form content on your page in markdown after the +++
 +++
+
 
 ## Self Introduction
 

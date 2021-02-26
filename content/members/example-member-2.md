@@ -1,8 +1,8 @@
 +++
 # This appears as bio text on the list of members
-title = "{{ replace .Name "-" " " | title }}"
+title = "Example Member 2"
 role = "Collaborator"
-bio = "Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur. Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur. Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur."
+bio = "Aenean vel bibendum quam. Aliquam at mollis quam. Proin efficitur."
 # This is used on your member page. Leave this default one or add your own
 avatar = "images/default_avatar.png"
 
