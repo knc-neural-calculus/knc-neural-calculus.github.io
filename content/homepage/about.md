@@ -32,8 +32,8 @@ avatar = "images/icon.png"
   url = "https://www.zotero.org/groups/2474614/knc-neural-calculus"
 
 [widget]
-  handler = "about"
-    
+  handler = "blank"
+  
   # Options: sm, md, lg and xl. Default is md.
   width = ""
 
@@ -56,7 +56,9 @@ avatar = "images/icon.png"
     # Options: fixed, local, scroll.
     attachment = ""
 
+    
 +++
+
 
 # KNC
 
