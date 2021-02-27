@@ -1,40 +1,38 @@
 ---
-title: "Michael I. Ivanitskiy"
-role: "Administrator, Collaborator"
-bio: "(bio) Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos."
-
-knc_id: miv
-email: miv@knc.ai
-github: mivanit
-academic_profile: Null 
-pronouns: Null
-website: Null
-redirect_page_to_website: False
-description: "goes in the page metadata"
-
-# only touch this if you know what you're doing
+title: "Lаrіа Rеуnоldѕ"
+role: "Collaborator"
+bio: "This text appears on the member list page"
 social:
   - icon: "envelope"
     iconPack: "fas"
-    url: "mailto:miv@knc.ai"
-    text: miv@knc.ai
+    url: "mailto:moire@knc.ai"
+    text: "moire@knc.ai"
 
   - icon: "github"
     iconPack: "fab"
-    url: "http://github.com/mivanit"
-    text: "mivanit"
+    url: "http://github.com/socketteer"
+    text: "socketteer"
 
-organization:
+# internal knc ID, should match your knc email
+knc_id: moire 
+pronouns: Null
+redirect_page_to_website: True
+website: 
+
+# probably dont change this (although its not really used)
+organization: 
   name: "knc.ai"
   url: "https://knc.ai"
 
-# shortContent: "(shortContent) I have no idea where this shows up"
-# Summary: "this is a summary, it will show up on the members list page"
-# content: "(content) test test test"
+# you can get icons here:
+# https://fontawesome.com/icons?d=gallery&p=2&m=free
+
+## the sections below dont appear to be used for anything
+# shortContent: "(shortContent)"
+# description: "(description)"
+# Summary: "(Summary)"
+# content: "(content)"
 ---
-
-<meta http-equiv="refresh" content="0; URL={{ .website }}" />
-
 
 **Vestibulum vel arcu**
 

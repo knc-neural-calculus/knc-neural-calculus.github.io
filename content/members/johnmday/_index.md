@@ -2,39 +2,29 @@
 title: "Michael I. Ivanitskiy"
 role: "Administrator, Collaborator"
 bio: "(bio) Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos."
-
-knc_id: miv
-email: miv@knc.ai
-github: mivanit
-academic_profile: Null 
-pronouns: Null
-website: Null
-redirect_page_to_website: False
-description: "goes in the page metadata"
-
-# only touch this if you know what you're doing
+organization:
+  name: "knc.ai"
+  url: "https://knc.ai"
 social:
   - icon: "envelope"
     iconPack: "fas"
     url: "mailto:miv@knc.ai"
-    text: miv@knc.ai
+    text: "miv@knc.ai"
 
   - icon: "github"
     iconPack: "fab"
     url: "http://github.com/mivanit"
     text: "mivanit"
 
-organization:
-  name: "knc.ai"
-  url: "https://knc.ai"
+knc_id: miv
+pronouns: Null
+redirect_page_to_website: True
 
 # shortContent: "(shortContent) I have no idea where this shows up"
+# description: "(description) I have no idea where this shows up"
 # Summary: "this is a summary, it will show up on the members list page"
 # content: "(content) test test test"
 ---
-
-<meta http-equiv="refresh" content="0; URL={{ .website }}" />
-
 
 **Vestibulum vel arcu**
 
