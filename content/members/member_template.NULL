@@ -2,6 +2,14 @@
 title: "Your Name"
 role: "Collaborator"
 bio: "This text appears on the member list page"
+
+# internal knc ID, should match your knc email
+knc_id: miv
+pronouns: Null
+website: Null
+redirect_page_to_website: False
+description: "goes in the page metadata"
+
 social:
   - icon: "envelope"
     iconPack: "fas"
@@ -12,10 +20,6 @@ social:
     iconPack: "fab"
     url: "http://github.com/your_github"
     text: "your_github"
-
-# internal knc ID, should match your knc email
-knc_id: yourname 
-pronouns: they/them
 
 # probably dont change this (although its not really used)
 organization: 

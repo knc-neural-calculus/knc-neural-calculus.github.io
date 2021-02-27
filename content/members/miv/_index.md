@@ -4,9 +4,6 @@ role: "Administrator, Collaborator"
 bio: "(bio) Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos."
 
 knc_id: miv
-email: miv@knc.ai
-github: mivanit
-academic_profile: Null 
 pronouns: Null
 website: Null
 redirect_page_to_website: False
