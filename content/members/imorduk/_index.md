@@ -10,8 +10,8 @@ social:
 
   - icon: "github"
     iconPack: "fab"
-    url: "http://github.com/socketteer"
-    text: "socketteer"
+    url: Null
+    text: Null
 
 # internal knc ID, should match your knc email
 knc_id: imorduk

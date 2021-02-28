@@ -1,11 +1,11 @@
 ---
-title: "John M. Day"
+title: "B Johnsrude"
 role: "Collaborator"
-bio: "Brain-inspired AI, Computational neuroscience, Computer vision"
+bio: "This text appears on the member list page"
 
 # internal knc ID, should match your knc email
-knc_id: johnmday
-pronouns: Null
+knc_id: jrude
+pronouns: "they/them"
 website: Null
 redirect_page_to_website: False
 description: "goes in the page metadata"
@@ -13,13 +13,13 @@ description: "goes in the page metadata"
 social:
   - icon: "envelope"
     iconPack: "fas"
-    url: "mailto:johnmday@umich.edu"
-    text: "johnmday@umich.edu"
+    url: "mailto:johnsrude@ucla.edu"
+    text: "johnsrude@ucla.edu"
 
-  - icon: "github"
-    iconPack: "fab"
-    url: "https://github.com/jday54"
-    text: "https://github.com/jday54"
+  - icon: "external-link-square-alt"
+    iconPack: "fas"
+    url: "http://www.math.ucla.edu/~johnsrude"
+    text: "http://www.math.ucla.edu/~johnsrude"
 
 # probably dont change this (although its not really used)
 organization: 
@@ -37,3 +37,4 @@ organization:
 ---
 
 **About**
+
