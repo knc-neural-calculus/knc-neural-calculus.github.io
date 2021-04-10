@@ -1,5 +1,5 @@
 ---
-title: "William Derksen"
+title: &name "William Derksen"
 role: "Collaborator"
 bio: "Novel learning algorothims and architectures, and AGI"
 
@@ -8,7 +8,7 @@ knc_id: will
 pronouns: he/him
 website: Null
 redirect_page_to_website: False
-description: "goes in the page metadata"
+description: *name
 
 social:
   - icon: "envelope"

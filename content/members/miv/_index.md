@@ -1,13 +1,13 @@
 ---
-title: "Michael I. Ivanitskiy"
+title: &name "Michael Ivanitskiy"
 role: "Administrator, Collaborator"
-bio: "(bio) Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos."
+bio: "computational neuroscience, neuromorphic machine learning"
 
 knc_id: miv
 pronouns: Null
 website: Null
 redirect_page_to_website: False
-description: "goes in the page metadata"
+description: *name
 
 # only touch this if you know what you're doing
 social:
@@ -28,9 +28,12 @@ organization:
 # shortContent: "(shortContent) I have no idea where this shows up"
 # Summary: "this is a summary, it will show up on the members list page"
 # content: "(content) test test test"
+
+# {{ if .redirect_page_to_website}}
+# <meta http-equiv="refresh" content="0; URL={{ .website }}" />
+# {{ end }}
 ---
 
-<meta http-equiv="refresh" content="0; URL={{ .website }}" />
 
 
 **Vestibulum vel arcu**

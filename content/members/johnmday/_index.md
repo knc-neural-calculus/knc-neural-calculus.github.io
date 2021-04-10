@@ -6,8 +6,8 @@ bio: "Brain-inspired AI, Computational neuroscience, Computer vision"
 # internal knc ID, should match your knc email
 knc_id: johnmday
 pronouns: Null
-website: Null
-redirect_page_to_website: False
+website: https://johnmday.com
+redirect_page_to_website: True
 description: "goes in the page metadata"
 
 social:
@@ -19,7 +19,12 @@ social:
   - icon: "github"
     iconPack: "fab"
     url: "https://github.com/jday54"
-    text: "https://github.com/jday54"
+    text: "jday54"
+
+  - icon: "globe"
+    iconPack: "fas"
+    url: "https://johnmday.com"
+    text: "johnmday.com"
 
 # probably dont change this (although its not really used)
 organization: 
@@ -36,4 +41,4 @@ organization:
 # content: "(content)"
 ---
 
-**About**
+# [johnmday.com](https://johnmday.com)

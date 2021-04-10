@@ -8,11 +8,6 @@ social:
     url: "mailto:imorduk@wustl.edu"
     text: "imorduk@wustl.edu"
 
-  - icon: "github"
-    iconPack: "fab"
-    url: Null
-    text: Null
-
 # internal knc ID, should match your knc email
 knc_id: imorduk
 pronouns: "he/him"

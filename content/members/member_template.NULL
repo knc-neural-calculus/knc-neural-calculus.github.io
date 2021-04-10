@@ -20,6 +20,16 @@ social:
     iconPack: "fab"
     url: "http://github.com/your_github"
     text: "your_github"
+  
+  - icon: "globe"
+    iconPack: "fas"
+    url: "https://your.website/"
+    text: "website"
+
+  - icon: "linkedin"
+    iconPack: "fas"
+    url: "https://www.linkedin.com/your-linkedin"
+    text: "linkedin"
 
 # probably dont change this (although its not really used)
 organization: 

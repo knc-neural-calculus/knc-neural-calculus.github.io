@@ -8,7 +8,7 @@ knc_id: joseph
 pronouns: he/him
 website: Null
 redirect_page_to_website: False
-description: "goes in the page metadata"
+description: "Joseph Jones - knc.ai"
 
 social:
   - icon: "envelope"
@@ -21,10 +21,10 @@ social:
     url: "http://github.com/jjones2000"
     text: "jjones2000"
   
-  - icon: "external-link-square-alt"
-    iconPack: "fas"
+  - icon: "linkedin"
+    iconPack: "fab"
     url: "https://www.linkedin.com/in/joseph-jones-64457915a"
-    text: "Linkedin"
+    # text: ""
 
 # probably dont change this (although its not really used)
 organization: 

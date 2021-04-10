@@ -19,7 +19,7 @@ social:
   - icon: "github"
     iconPack: "fab"
     url: "https://github.com/balisujohn"
-    text: "https://github.com/balisujohn"
+    text: "balisujohn"
 
 # probably dont change this (although its not really used)
 organization: 

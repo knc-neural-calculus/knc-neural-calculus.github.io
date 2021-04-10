@@ -1,14 +1,14 @@
 ---
-title: "B Johnsrude"
+title: "Ben Johnsrude"
 role: "Collaborator"
 bio: "This text appears on the member list page"
 
 # internal knc ID, should match your knc email
 knc_id: jrude
 pronouns: "they/them"
-website: Null
-redirect_page_to_website: False
-description: "goes in the page metadata"
+website: http://www.math.ucla.edu/~johnsrude
+redirect_page_to_website: True
+description: "Ben Johnsrude - knc.ai"
 
 social:
   - icon: "envelope"
@@ -16,10 +16,10 @@ social:
     url: "mailto:johnsrude@ucla.edu"
     text: "johnsrude@ucla.edu"
 
-  - icon: "external-link-square-alt"
+  - icon: "globe"
     iconPack: "fas"
     url: "http://www.math.ucla.edu/~johnsrude"
-    text: "http://www.math.ucla.edu/~johnsrude"
+    text: "~johnsrude"
 
 # probably dont change this (although its not really used)
 organization: 
@@ -36,5 +36,4 @@ organization:
 # content: "(content)"
 ---
 
-**About**
-
+# [~johnsrude](http://www.math.ucla.edu/~johnsrude)
