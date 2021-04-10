@@ -10,6 +10,9 @@ New member page: hugo new members/my-name.md
 
 New project page: hugo new projects/project-name.md
 
+Member list template: `themes/eureka/layouts/partials/components/summary-masonry.html`
+
+Member page template: `themes/eureka/layouts/members/list.html`
 
 Start server: hugo server -D
 
