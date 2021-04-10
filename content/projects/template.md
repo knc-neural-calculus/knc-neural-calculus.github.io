@@ -4,7 +4,26 @@ title: "Project Template"
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 summary: "ffffffff"
 # toc: true
-# authors: ["miv"]
+# authors: ["unused?"]  
+links:
+- icon: "envelope"
+  iconPack: "fas"
+  url: "mailto:admin@knc.ai"
+  text: "admin@knc.ai"
+
+- icon: "github"
+  iconPack: "fab"
+  url: "https://github.com/knc-neural-calculus/mltests"
+  text: "mltests"
+
+- icon: "globe"
+  iconPack: "fas"
+  url: "https://knc.ai/projects/template"
+  text: "knc.ai"
+
+# you can get icons here:
+# https://fontawesome.com/icons?d=gallery&p=2&m=free
+
 authorLinks:
   - name: Michael Ivanitskiy
     url: ../../members/miv
@@ -12,6 +31,8 @@ authorLinks:
     url: ../../members/balis
   - name: Diogenes the Cynic
     url: "mailto:standoutofmysunlight@ancientgreece.edu"
+
+
 # tags, categories, themes, series, and dates can be commented out without issue
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]

@@ -6,7 +6,17 @@
         class="col-span-2 {{ if not $hasSidebar }} {{- print "lg:col-start-2" -}} {{ end }} lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
         <h1 class="font-bold text-3xl text-primary-text">{{ .Title }}</h1>
         
-        {{ partial "components/post-metadata" . }}
+        
+        <div class="flex">
+            {{ $brand := $.Param "links"}}
+            {{ range $brand }}
+            {{ $iconPack := .iconPack | default .icon_pack }}
+            {{ $src := print $iconPack " fa-" .icon }} 
+            <!-- <a href="{{ .url }}"><i class="{{ print $src }}"></i></a>&nbsp;&nbsp;  -->
+            <a href="{{ .url }}"> <i class="{{ print $src }}"></i> {{ .text }} </a>&nbsp;&nbsp;
+            {{ end }}        
+        </div>
+
         
         {{ with .Params.authorLinks }}
         <div class="mr-6 my-2">
@@ -18,6 +28,8 @@
             {{ end }}
         </div>
         {{ end }}
+        
+        {{ partial "components/post-metadata" . }}
         <br><hr><br>
         
         {{ $featured := partial "utils/get-featured" . }}
