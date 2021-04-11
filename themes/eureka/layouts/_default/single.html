@@ -20,7 +20,7 @@
         
         {{ with .Params.authorLinks }}
         <div class="mr-6 my-2">
-            By: {{ range $index, $value := . }}
+            Contributors: {{ range $index, $value := . }}
             {{ if gt $index 0 }}
             <span> | </span>
             {{ end -}}

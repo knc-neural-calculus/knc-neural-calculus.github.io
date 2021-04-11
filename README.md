@@ -14,6 +14,8 @@ Member list template: `themes/eureka/layouts/partials/components/summary-masonry
 
 Member page template: `themes/eureka/layouts/members/list.html`
 
+Project page template: `themes/eureka/layouts/_default/single.html`
+
 Start server: hugo server -D
 
 Build static pages: hudo -D
