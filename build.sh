@@ -1,0 +1,1 @@
+python pandoc-sitegen/build.py sitegen-config.yml
