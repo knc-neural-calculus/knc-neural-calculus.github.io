@@ -1,0 +1,3 @@
+[submodule "pandoc-sitegen"]
+	path = pandoc-sitegen
+	url = https://github.com/mivanit/pandoc-sitegen
