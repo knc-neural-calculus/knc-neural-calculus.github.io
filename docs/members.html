@@ -4,8 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="description" content="This is the blog index" />
-  <title>Blog</title>
+  <title>members._index</title>
   <style>
     html {
       line-height: 1.5;
@@ -148,8 +147,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <!-- Styling -->
-  <link rel="stylesheet" href="./resources/css/default.css">
-  <link rel="stylesheet" href="./resources/css/syntax.css">
+  <link rel="stylesheet" href="/resources/css/default.css">
+  <link rel="stylesheet" href="/resources/css/syntax.css">
 
   <!-- MathJax -->
   <!-- <script type="text/javascript" async
@@ -157,28 +156,35 @@
   </script> -->
 
   <!-- HTML and css adapted from https://github.com/brianbuccola/brianbuccola.github.io -->
+
+
+  
 </head>
 <body>
 <div class="logo">
-	<a href="./blog.html">Example Website | Blog</a>
+	<a href="./members.html">KNC.ai | Members</a>
 </div>
 <nav class="nav">
-	<a class="nav" href="./index.html">Home</a>
-	<a class="nav" href="https://github.com">GitHub</a>
-	<a class="nav" href="./blog.html">Blog</a>
-	<a class="nav" href="./projects.html">Projects</a>
+	<a class="nav" href="/index.html">Home</a>
+	<a class="nav" href="/members.html">Members</a>
+	<a class="nav" href="https://github.com/knc-neural-calculus">GitHub</a>
 </nav>
-<header id="title-block-header">
-<h1 class="title">Blog</h1>
-</header>
 <!-- THIS IS AN AUTOMATICALLY GENERATED PAGE, CHANGES WILL BE OVERWRITTEN -->
-<p>Here all all the blog posts:</p>
-<ul>
-<li><a href="blog.lorem-ipsum.html"><strong>Lorem Ipsum Post</strong></a><br />
-<em>This is an example blog post</em></li>
-<li><a href="blog.part_2.html"><strong>Lorem Ipsum Post, part 2</strong></a><br />
-<em>If Lorem Ipsum is so good, why is there no Lorem Ipsum 2?</em></li>
+<ul id="shuffleme">
+<li>
+<a href="members/ameetr.html"><b>Ameet Rahane</b></a> <em>Mentor, Organizer</em> <br/> <a href="mailto:ameetr@knc.ai"> <img height="12" src="./resources/icons/mail.svg"> ameetr@knc.ai </a> <a href="https://github.com/AmeetR"> <img height="12" src="./resources/icons/github.svg"> AmeetR </a> <br/><br/>
+</li>
+<li>
+<a href="members/balis.html"><b>John Balis</b></a> <em>Mentor, Organizer</em> <br/> <a href="mailto:balis@knc.ai"> <img height="12" src="./resources/icons/mail.svg"> balis@knc.ai </a> <a href="https://github.com/balisujohn"> <img height="12" src="./resources/icons/github.svg"> balisujohn </a> <br/><br/>
+</li>
+<li>
+<a href="members/miv.html"><b>Michael Ivanitskiy</b></a> <em>Mentor, Organizer</em> <br/> <a href="mailto:miv@knc.ai"> <img height="12" src="./resources/icons/mail.svg"> miv@knc.ai </a> <a href="http://github.com/mivanit"> <img height="12" src="./resources/icons/github.svg"> mivanit </a> <a href="https://mivanit.github.io"> <img height="12" src="./resources/icons/internet.svg"> mivanit.github.io </a> <br/><br/>
+</li>
 </ul>
+<script>
+  var ul = document.querySelector('ul#shuffleme');
+  for (var i = ul.children.length; i >= 0; i--) {ul.appendChild(ul.children[Math.random() * i | 0]);}
+</script>
 <footer>
 	generated using <a href="https://github.com/mivanit/pandoc-sitegen">pandoc-sitegen</a>
 </footer>
