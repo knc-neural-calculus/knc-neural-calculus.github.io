@@ -1,5 +1,5 @@
 ---
-Title: "Lаrіа Rеуnоldѕ"
+pagetitle: "Lаrіа Rеуnоldѕ"
 role: "mentor"
 social:
   - icon: "mail"

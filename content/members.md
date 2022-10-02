@@ -1,5 +1,5 @@
 ---
-Title: Members
+pagetitle: Members
 __index__: true
 __index_exclude__: false
 ---

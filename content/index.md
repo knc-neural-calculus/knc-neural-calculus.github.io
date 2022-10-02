@@ -1,5 +1,5 @@
 ---
-Title: About
+pagetitle: About
 ---
 
 KNC started as a reading group on the intersection between computational neuroscience and machine learning. Since then, most of our members have transitioned to AI safety work. We've restarted this reading group with the primary aim of helping students and early-stage researchers:

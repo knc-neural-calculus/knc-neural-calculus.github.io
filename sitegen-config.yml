@@ -47,5 +47,10 @@ __pandoc__:
     - "pandoc-sitegen/filters/links_md2html.py"
 
   email-obfuscation: 'references'
+  document-css: false
 
   html-q-tags: true
+  # css:
+  #   - !join [*RESOURCES_DIR, "css/", "pandoc.css"]
+  #   - !join [*RESOURCES_DIR, "css/", "default.css"]
+  #   - !join [*RESOURCES_DIR, "css/", "syntax.css"]

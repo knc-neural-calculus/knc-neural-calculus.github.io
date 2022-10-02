@@ -1,5 +1,5 @@
 ---
-Title: "John Balis"
+pagetitle: "John Balis"
 role: "Mentor, Organizer"
 
 social:
@@ -10,10 +10,14 @@ social:
   - icon: "github"
     url: "https://github.com/balisujohn"
     text: "balisujohn"
+
+  - icon: "internet"
+    url: "https://balisujohn.github.io"
+    text: "balisujohn.github.io"
 ---
 
-PhD Student at UW Madison with a background in computer sciences and applied mathematics. 
+PhD student focused on sim2real reinforcement learning for robotics
 
-Focusing on sim2real reinforcement learning. I have dabbled in neuro-evolution and I am particularly proud of a solution to Atari space-invaders(RAM variant) arrived at through neuro-evolution: https://www.youtube.com/watch?v=zFZZjQkz7RA. 
+*redirecting...*
 
-I am interested in any form of learning in which a previously unseen task can be learned without explicit programming. 
+<meta http-equiv="refresh" content="0; URL='https://balisujohn.github.io'" />

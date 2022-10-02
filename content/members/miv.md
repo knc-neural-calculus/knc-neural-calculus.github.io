@@ -1,5 +1,5 @@
 ---
-Title: "Michael Ivanitskiy"
+pagetitle: "Michael Ivanitskiy"
 role: "Mentor, Organizer"
 social:
   - icon: "mail"
@@ -14,4 +14,8 @@ social:
     url: "https://mivanit.github.io"
     text: "mivanit.github.io"
 ---
+
+*redirecting...*
+
+<meta http-equiv="refresh" content="0; URL='https://mivanit.github.io'" />
 

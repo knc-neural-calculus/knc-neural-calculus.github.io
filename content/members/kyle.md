@@ -1,5 +1,5 @@
 ---
-Title: "Kyle McDonell"
+pagetitle: "Kyle McDonell"
 role: "Mentor"
 social:
   - icon: "mail"

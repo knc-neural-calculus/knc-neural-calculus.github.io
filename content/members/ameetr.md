@@ -1,5 +1,5 @@
 ---
-Title: "Ameet Rahane"
+pagetitle: "Ameet Rahane"
 role: Mentor, Organizer
 social:
   - icon: mail
@@ -10,6 +10,6 @@ social:
     text: "AmeetR"
 ---
 
-I'm broadly interested in using neuroscience to inform deep learning and vice versa. For example, right now, I'm incredibly interested in the interplay between evolution and plasticity and how that could be exploited to design a meta-learning algorithm for spiking neural networks.
+I’m broadly interesting in the interplay between neuroscience and machine learning, specifically around the fields of machine learning explainability, interpretability, and model monitoring. This includes keeping up to date with popular MLOps techniques and deployment strategies. 
 
-Right now, I'm working in a research position in an applied computational role in a neuroscience lab, dealing with pose estimation via deep learning, lots of statistical problems, and spike data analysis. I'm also doing side projects in theoretical deep learning/theoretical neuroscience with Dan Goodman, creating a meta-learning algorithm for spiking neural networks using RNNs as surrogate gradients.
+Right now, I work as a data scientist at IBM in the Watson AI for IT operations product. As part of the machine learning operations team, I examine how machine learning models perform in production and how we can monitor degradation of our productionized algorithms in real time, without ground truth.
