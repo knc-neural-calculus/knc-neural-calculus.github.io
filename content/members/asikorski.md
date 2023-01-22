@@ -18,4 +18,4 @@ https://github.com/antonyxsik
 
 *redirecting...*
 
-<meta http-equiv="refresh" content="0; URL='https://ib-nosirov.github.io/'" />
+<meta http-equiv="refresh" content="0; URL='https://github.com/antonyxsik'" />
