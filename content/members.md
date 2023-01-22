@@ -10,14 +10,14 @@ __index_exclude__: false
 
 {{^__index_exclude__}}
 <li>
-<a href="members/{{__filename__}}"><b>{{Title}}</b></a>
+<a href="members/{{__filename__}}"><b>{{pagetitle}}</b></a>
 	<em>{{role}}</em>
 	<br/>
 	{{#social}}
 	<a href="{{url}}">
 		<img height="12" src="./{{__globals__.extras_data.icon_path}}{{icon}}.svg">
 		{{text}}
-	</a>
+	</a>&nbsp;
 	{{/social}}
 	<br/><br/>
 </li>

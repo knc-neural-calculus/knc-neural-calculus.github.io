@@ -1,6 +1,6 @@
 ---
 pagetitle: "Ameet Rahane"
-role: Mentor, Organizer
+role: Member
 social:
   - icon: mail
     url: "mailto:ameetr@knc.ai"
